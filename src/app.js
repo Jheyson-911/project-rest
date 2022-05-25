@@ -4,6 +4,7 @@ import morgan from "morgan";
 import postRoutes from "./routes/post.routes";
 import personaRoutes from "./routes/persona.routes";
 import rolRoutes from "./routes/rol.routes";
+import usuarioRoutes from "./routes/usuario.routes";
 
 const app = express();
 var cors = require("cors");
@@ -23,4 +24,8 @@ app.use('/api/auth/post', postRoutes);
 app.use('/api/auth/persona', personaRoutes);
 
 app.use('/api/auth/rol', rolRoutes);
+
+app.use('/api/auth/user', usuarioRoutes);
+
+
 export default app;
