@@ -1,5 +1,4 @@
 import { Pool } from "pg";
-import { ssl } from "pg/lib/defaults";
 
 export const pool = new Pool({
     user: "ndhbxcbiqwbmdb",
